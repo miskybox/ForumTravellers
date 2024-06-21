@@ -1,0 +1,394 @@
+/* General styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-around;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Header and Footer common background color */
+.background-custom {
+  background: linear-gradient(
+    45deg,
+    #ffa07a,
+    #ffd700,
+    #ffdead,
+    #87ceeb,
+    #b0e0e6
+  );
+}
+
+/* Header styles */
+.header-container {
+  height: 50vh; /* Set the height to half of the viewport height */
+}
+
+.h-half-screen {
+  height: 50vh; /* Set the height to half of the viewport height */
+}
+
+.navbar {
+  z-index: 1000;
+  background: linear-gradient(
+    45deg,
+    #ffa07a,
+    #ffd700,
+    #ffdead,
+    #87ceeb,
+    #b0e0e6
+  ); /* Matching the background-custom */
+}
+
+.navbar-custom {
+  height: 0px;
+}
+
+.nav-link,
+.dropdown-item {
+  color: #41099a !important;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #ffd700;
+  border: none;
+  color: #41099a;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #ff8c00;
+}
+
+.btn-sm {
+  color: #000000;
+  background-color: #ffd700;
+  border: none;
+}
+
+.btn-sm:hover {
+  color: #ffffff;
+  background-color: #ff8c00;
+}
+
+.weather {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.logo {
+  margin-left: auto;
+}
+
+.navbar-collapse,
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav {
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-collapse .ml-auto {
+  margin-left: auto;
+}
+
+/* Forum styles */
+.forum-container {
+  margin-top: 20px; /* Add a top margin to separate from the header */
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.forum-title {
+  color: #41099a !important;
+}
+
+.forum-container .navbar {
+  background: linear-gradient(
+    45deg,
+    #ffa07a,
+    #ffd700,
+    #ffdead,
+    #87ceeb,
+    #b0e0e6
+  ); /* Matching the background-custom */
+}
+
+.forum-container .navbar-brand {
+  color: #ffd700;
+}
+
+.forum-container .btn-outline-secondary {
+  color: #ffd700;
+  border-color: #ffd700;
+}
+
+.forum-container .btn-outline-secondary:hover {
+  color: #ff8c00;
+  border-color: #ff8c00;
+}
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(
+    45deg,
+    #ffa07a,
+    #ffd700,
+    #ffdead,
+    #87ceeb,
+    #b0e0e6
+  ); /* Matching the background-custom */
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-right {
+  text-align: center;
+}
+
+.footer-right h4 {
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+}
+
+.social-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icon {
+  margin-right: 10px;
+}
+
+/* Carousel styles */
+.carousel-item {
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: auto;
+}
+.carousel {
+  z-index: 1; 
+}
+
+
+/* Main styles */
+.main {
+  /* padding: 20px 0; */
+  padding: 40px 0;
+}
+
+.header {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background: linear-gradient(
+    45deg,
+    #ffa07a,
+    #ffd700,
+    #ffdead,
+    #87ceeb,
+    #b0e0e6
+  ); /* Matching the background-custom */
+  padding: 100px 0;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.header-text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.btn-secondary {
+  background-color: #6c757d;
+}
+
+.about {
+  background-color: #fff;
+}
+
+.card {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.card-header {
+  background-color: #000000;
+  color: #ffd700;
+}
+
+.card-body {
+  color: #ffffff;
+}
+
+.card-text-custom {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Additional styles */
+.forum {
+  background-color: #f5ecec;
+  color: #333;
+}
+
+.h1 {
+  color: #41099a !important;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  max-height: 80vh; /* Ajusta según sea necesario */
+  overflow-y: auto;
+  background-color: #000000;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover {
+  color: #ff8c00;
+}
+
+.gallery-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.gallery-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.gallery-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery-card .card-body {
+  flex-grow: 1;
+}
+
+.card-link {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.blog-post-title,
+.blog-post-subtitle {
+  color: yellow !important; /* Change the color to yellow */
+}
+
+.custom-footer em {
+  color: yellow !important; /* Cambia '#FFFFFF' por el código hexadecimal del color que desees */
+}
+
+.mt-5 {
+  margin-top: 6rem !important;
+  margin-bottom: 2rem; /* Add spacing above the login form */
+}
+
+.mb-4 {
+  margin-bottom: 2rem !important; /* Spacing below the h2 */
+}
+
+.login-heading {
+  /* Style for the h2 */
+  font-weight: bold;
+  color: yellow;
+}
+
+/* Button size adjustment */
+@media (min-width: 768px) {
+  /* Apply only on medium and larger screens */
+  .d-grid {
+    margin-top: 1rem;
+  }
+
+  .d-grid .btn {
+    /* Target the button inside d-grid */
+    width: 25%; /* Set the width to 25% of its container */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+}
+
+.navbar-rounded {
+  border-radius: 10px; /* Or your desired radius */
+}

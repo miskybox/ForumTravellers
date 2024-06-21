@@ -1,0 +1,15 @@
+# Establecer el comportamiento predeterminado, en caso de que la gente no tenga core.autocrlf configurado.
+* text=auto
+
+# Declarar explícitamente archivos de texto que siempre quieres normalizar y convertir a LF al hacer checkout.
+*.c text
+*.h text
+
+# Declarar archivos que siempre tendrán finales de línea CRLF al hacer checkout.
+*.sln text eol=crlf
+
+# Declarar archivos que siempre tendrán finales de línea LF al hacer checkout.
+*.sh text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.md text eol=lf
