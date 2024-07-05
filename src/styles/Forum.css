@@ -1,0 +1,31 @@
+/*Forum.css*/
+.forum-container {
+    margin-top: 20px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .forum-title {
+    color: #41099a !important;
+  }
+  
+  .forum-container .navbar {
+    background: linear-gradient(45deg, #ffa07a, #ffd700, #ffdead, #87ceeb, #b0e0e6);
+  }
+  
+  .forum-container .navbar-brand,
+  .forum-container .btn-outline-secondary {
+    color: #ffd700;
+    border-color: #ffd700;
+  }
+  
+  .forum-container .btn-outline-secondary:hover {
+    color: #ff8c00;
+    border-color: #ff8c00;
+  }
+  
+  .forum {
+    background-color: #FEFAF6;
+    color: #333;
+  }
+  

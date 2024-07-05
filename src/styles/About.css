@@ -1,0 +1,26 @@
+/*About.css*/
+.about {
+    background-color: #FEFAF6;
+  }
+  
+  .card {
+    background-color: #102C57;
+    border: 1px solid #ffffff;
+  }
+  
+  .card-header {
+    background-color: #102C57;
+    color: #FFC470;
+  }
+  
+  .card-body {
+    color: #FEFAF6;
+  }
+  
+  .card-text-custom {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  

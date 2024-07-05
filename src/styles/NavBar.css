@@ -1,0 +1,33 @@
+/*Navbar.css*/
+.navbar {
+    z-index: 1000;
+  }
+  
+  .navbar-custom {
+    height: 0px;
+  }
+  
+  .navbar-collapse,
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .navbar-nav {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .navbar-collapse .ml-auto {
+    margin-left: auto;
+  }
+  
+  .navbar-rounded {
+    border-radius: 10px;
+  }
+  
+  .logo {
+    margin-left: auto;
+  }
+  

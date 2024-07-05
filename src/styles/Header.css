@@ -1,0 +1,22 @@
+/*Header.css*/
+.header-container,
+.h-half-screen {
+  height: 50vh;
+}
+
+.header {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.header-text {
+  font-size: 20px;
+  line-height: 1.5;
+}

@@ -1,0 +1,37 @@
+/*Gallery.css*/
+.gallery-container {
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #102C57;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .gallery-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #102C57;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .gallery-card img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .gallery-card .card-body {
+    flex-grow: 1;
+  }
+  
+  .card-link {
+    color: #FFC470;
+    text-decoration: none;
+  }
+  
+  .card-link:hover {
+    color: #DD5746;
+  }
+  

@@ -46,7 +46,7 @@ const Footer = () => {
           />
           <button
             onClick={handleSubscribeClick}
-            className="btn btn-primary join-item"
+              className="input input-bordered join-item input-text-black"
           >
             Subscribe
           </button>

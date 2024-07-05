@@ -1,0 +1,80 @@
+/* Polaroid styles in App.css */
+.polaroid-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  max-width: 300px; /* Ajusta el ancho máximo para parecerse más a la tarjeta DaisyUI */
+  border-radius: 15px; /* Bordes redondeados para que coincida con la tarjeta DaisyUI */
+  cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+  transition: transform 0.3s ease; /* Suaviza la animación */
+}
+
+.polaroid-card:hover {
+  transform: scale(1.05); /* Efecto hover */
+}
+
+
+.polaroid-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.polaroid-card h5 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #102C57;
+}
+
+.polaroid-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.polaroid-card-footer {
+  background-color: white;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la parte inferior */
+  text-align: center;
+}
+
+.polaroid-card-modal {
+  max-width: 600px; /* Doble del tamaño original */
+  margin: auto;
+}
+
+.blog-post-card {
+  max-width: 1000px; /* Ajusta el ancho máximo de la tarjeta */
+  margin: 20px auto; /* Centra la tarjeta y agrega un poco de margen */
+  background-color:  #102C57;
+}
+
+.custom-footer {
+  background-color:  #FEFAF6;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.polaroid-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-item > div {
+  flex: 1 0 33%; /* Tres tarjetas por fila */
+  max-width: auto; /* Asegura que el ancho máximo sea un tercio del carrusel */
+  padding: 10px;
+  box-sizing: border-box;
+}

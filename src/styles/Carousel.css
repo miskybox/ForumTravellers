@@ -1,0 +1,11 @@
+/*Carouseñ.css*/
+.carousel-item {
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+  }
+  

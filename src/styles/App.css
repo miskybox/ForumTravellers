@@ -1,3 +1,114 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* General styles */ /*
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #FEFAF6;
+  color: #102C57;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-around;
+}
+
+.nav-link,
+.dropdown-item,
+.h1,
+.blog-post-title,
+.blog-post-subtitle,
+.custom-footer em,
+.login-heading {
+  color: #41099a !important;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-sm,
+.btn-sm:hover,
+.btn-primary:hover,
+.btn-secondary:hover {
+  color: #41099a;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-sm {
+  background-color: #ffd700;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-sm:hover {
+  background-color: #ff8c00;
+}
+
+.background-custom,
+.navbar,
+.header,
+.footer {
+  background: linear-gradient(45deg, #4793AF, #FFC470, #DD5746, #8B322C);
+}
+
+.input-text-black {
+  color: black;
+}
+
+.card,
+.gallery-card {
+  background-color: #102C57;
+  border: 1px solid #ffffff;
+}
+
+.card-header,
+.card-link,
+.card-text-custom,
+.card-body,
+.gallery-card .card-body {
+  color: #FEFAF6;
+}
+
+.card-header {
+  color: #FFC470;
+}
+
+.gallery-card .card-link:hover {
+  color: #DD5746;
+}
+
+/* Utility classes *//*
+.mb-4,
+.mb-3,
+.mt-5 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-5 {
+  margin-top: 6rem !important;
+  margin-bottom: 2rem;
+}
+
+/* Button size adjustment *//*
+@media (min-width: 768px) {
+  .d-grid {
+    margin-top: 1rem;
+  }
+
+  .d-grid .btn {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+*/
+
+
 /* General styles */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
@@ -11,20 +122,19 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #FEFAF6;
+  color: #102C57;
 }
 
 /* Header and Footer common background color */
 .background-custom {
   background: linear-gradient(
     45deg,
-    #ffa07a,
-    #ffd700,
-    #ffdead,
-    #87ceeb,
-    #b0e0e6
-  );
+    #4793AF,
+    #FFC470,
+    #DD5746,
+    #8B322C
+  );  
 }
 
 /* Header styles */
@@ -40,12 +150,11 @@ body {
   z-index: 1000;
   background: linear-gradient(
     45deg,
-    #ffa07a,
-    #ffd700,
-    #ffdead,
-    #87ceeb,
-    #b0e0e6
-  ); /* Matching the background-custom */
+    #4793AF,
+    #FFC470,
+    #DD5746,
+    #8B322C
+  );   /* Matching the background-custom */
 }
 
 .navbar-custom {
@@ -107,9 +216,9 @@ body {
   margin-left: auto;
 }
 
-/* Forum styles */
+/* Forum styles *//*
 .forum-container {
-  margin-top: 20px; /* Add a top margin to separate from the header */
+  margin-top: 20px; 
   background-color: #000000;
   color: #ffffff;
 }
@@ -126,7 +235,7 @@ body {
     #ffdead,
     #87ceeb,
     #b0e0e6
-  ); /* Matching the background-custom */
+  ); 
 }
 
 .forum-container .navbar-brand {
@@ -144,15 +253,15 @@ body {
 }
 
 /* Footer styles */
+
 .footer {
   background: linear-gradient(
     45deg,
-    #ffa07a,
-    #ffd700,
-    #ffdead,
-    #87ceeb,
-    #b0e0e6
-  ); /* Matching the background-custom */
+    #4793AF,
+    #FFC470,
+    #DD5746,
+    #8B322C
+  );   /* Matching the background-custom */
 }
 
 .footer-left,
@@ -200,6 +309,12 @@ body {
   margin-right: 10px;
 }
 
+.input-text-black {
+  color: black;
+}
+
+
+
 /* Carousel styles */
 .carousel-item {
   height: 500px;
@@ -208,13 +323,13 @@ body {
 
 .carousel-item img {
   object-fit: cover;
-  height: auto;
-}
+  height: 100%;
+} /*
 .carousel {
   z-index: 1; 
 }
 
-
+*/
 /* Main styles */
 .main {
   /* padding: 20px 0; */
@@ -227,12 +342,11 @@ body {
   text-align: center;
   background: linear-gradient(
     45deg,
-    #ffa07a,
-    #ffd700,
-    #ffdead,
-    #87ceeb,
-    #b0e0e6
-  ); /* Matching the background-custom */
+    #4793AF,
+    #FFC470,
+    #DD5746,
+    #8B322C
+  );  /* Matching the background-custom */
   padding: 100px 0;
 }
 
@@ -259,21 +373,21 @@ body {
 }
 
 .about {
-  background-color: #fff;
+  background-color:#FEFAF6;
 }
 
 .card {
-  background-color: #000000;
+  background-color: #102C57;
   border: 1px solid #ffffff;
 }
 
 .card-header {
-  background-color: #000000;
-  color: #ffd700;
+  background-color: #102C57;
+  color:#FFC470;
 }
 
 .card-body {
-  color: #ffffff;
+  color: #FEFAF6;
 }
 
 .card-text-custom {
@@ -285,7 +399,7 @@ body {
 
 /* Additional styles */
 .forum {
-  background-color: #f5ecec;
+  background-color:  #FEFAF6;
   color: #333;
 }
 
@@ -302,7 +416,7 @@ body {
 .gallery-container {
   max-height: 80vh; /* Ajusta según sea necesario */
   overflow-y: auto;
-  background-color: #000000;
+  background-color: #102C57;
 }
 
 .card-link {
@@ -311,7 +425,7 @@ body {
 }
 
 .card-link:hover {
-  color: #ff8c00;
+  color:  #DD5746;
 }
 
 .gallery-container {
@@ -323,7 +437,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #000000;
+  background-color: #102C57;
   border: 1px solid #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -339,7 +453,7 @@ body {
 }
 
 .card-link {
-  color: #ffd700;
+  color: #FFC470;
   text-decoration: none;
 }
 
@@ -353,11 +467,11 @@ body {
 
 .blog-post-title,
 .blog-post-subtitle {
-  color: yellow !important; /* Change the color to yellow */
+  color: #FFC470 !important; 
 }
 
 .custom-footer em {
-  color: yellow !important; /* Cambia '#FFFFFF' por el código hexadecimal del color que desees */
+  color: #FFC470 !important; 
 }
 
 .mt-5 {
@@ -372,7 +486,7 @@ body {
 .login-heading {
   /* Style for the h2 */
   font-weight: bold;
-  color: yellow;
+  color: #FFC470;
 }
 
 /* Button size adjustment */
@@ -391,4 +505,85 @@ body {
 
 .navbar-rounded {
   border-radius: 10px; /* Or your desired radius */
+}
+
+/* Polaroid styles in App.css */
+.polaroid-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  max-width: 300px; /* Ajusta el ancho máximo para parecerse más a la tarjeta DaisyUI */
+  border-radius: 15px; /* Bordes redondeados para que coincida con la tarjeta DaisyUI */
+  cursor: pointer; /* Cambia el cursor para indicar que es clicable */
+  transition: transform 0.3s ease; /* Suaviza la animación */
+}
+
+.polaroid-card:hover {
+  transform: scale(1.05); /* Efecto hover */
+}
+
+
+.polaroid-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
+}
+
+.polaroid-card h5 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #102C57;
+}
+
+.polaroid-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.polaroid-card-footer {
+  background-color: white;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 15px 15px; /* Bordes redondeados solo en la parte inferior */
+  text-align: center;
+}
+
+.polaroid-card-modal {
+  max-width: 600px; /* Doble del tamaño original */
+  margin: auto;
+}
+
+.blog-post-card {
+  max-width: 1000px; /* Ajusta el ancho máximo de la tarjeta */
+  margin: 20px auto; /* Centra la tarjeta y agrega un poco de margen */
+  background-color:  #102C57;
+}
+
+.custom-footer {
+  background-color:  #FEFAF6;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.polaroid-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.carousel-item > div {
+  flex: 1 0 33%; /* Tres tarjetas por fila */
+  max-width: auto; /* Asegura que el ancho máximo sea un tercio del carrusel */
+  padding: 10px;
+  box-sizing: border-box;
 }

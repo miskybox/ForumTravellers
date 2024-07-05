@@ -1,0 +1,47 @@
+/*Footer.css*/
+.footer {
+    background: linear-gradient(45deg, #4793AF, #FFC470, #DD5746, #8B322C);
+  }
+  
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-logo {
+    width: 150px;
+  }
+  
+  .footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-right {
+    text-align: center;
+  }
+  
+  .footer-right h4,
+  .footer-title {
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  
+  .social-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+  }
+  
