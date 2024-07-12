@@ -1,45 +1,41 @@
-//Carousel.jsx
+//Carousel.jsx 
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../styles/App.css';
-import glaciarBgFog from '../assets/glaciar-bg-fog.jpg';
-import sjgBg from '../assets/SJG-bg.jpg';
-import desierto from '../assets/desierto.jpg';
-import torres from '../assets/torres.jpg';
 
 const CarouselBackground = () => {
- return (
+  return (
     <Carousel>
       <Carousel.Item className="carousel-item">
         <img loading="lazy"
           className="d-block w-100"
-          src={glaciarBgFog}
+          src="https://i.postimg.cc/J066Xhsz/glaciar-Perito-Moreno.jpg"
           alt="Slide 1"
         />
       </Carousel.Item>
       <Carousel.Item className="carousel-item">
         <img loading="lazy"
           className="d-block w-100"
-          src={torres}
+          src="https://i.postimg.cc/WzTL8tpm/dragonstone.jpg"
           alt="Slide 2"
         />
       </Carousel.Item>
       <Carousel.Item className="carousel-item">
         <img loading="lazy"
           className="d-block w-100"
-          src={desierto}
+          src="https://i.postimg.cc/W1QyStXD/death-Valley.jpg"
           alt="Slide 3"
         />
       </Carousel.Item>
       <Carousel.Item className="carousel-item">
         <img loading="lazy"
           className="d-block w-100"
-          src={sjgBg}
+          src="https://i.postimg.cc/hj03Ssgx/torres-Del-Paine.jpg"
           alt="Slide 4"
         />
       </Carousel.Item>
     </Carousel>
- );
+  );
 }
 
 export default CarouselBackground;

@@ -1,114 +1,3 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-
-/* General styles */ /*
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #FEFAF6;
-  color: #102C57;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: space-around;
-}
-
-.nav-link,
-.dropdown-item,
-.h1,
-.blog-post-title,
-.blog-post-subtitle,
-.custom-footer em,
-.login-heading {
-  color: #41099a !important;
-}
-
-.btn-primary,
-.btn-secondary,
-.btn-sm,
-.btn-sm:hover,
-.btn-primary:hover,
-.btn-secondary:hover {
-  color: #41099a;
-}
-
-.btn-primary,
-.btn-secondary,
-.btn-sm {
-  background-color: #ffd700;
-  border: none;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover,
-.btn-sm:hover {
-  background-color: #ff8c00;
-}
-
-.background-custom,
-.navbar,
-.header,
-.footer {
-  background: linear-gradient(45deg, #4793AF, #FFC470, #DD5746, #8B322C);
-}
-
-.input-text-black {
-  color: black;
-}
-
-.card,
-.gallery-card {
-  background-color: #102C57;
-  border: 1px solid #ffffff;
-}
-
-.card-header,
-.card-link,
-.card-text-custom,
-.card-body,
-.gallery-card .card-body {
-  color: #FEFAF6;
-}
-
-.card-header {
-  color: #FFC470;
-}
-
-.gallery-card .card-link:hover {
-  color: #DD5746;
-}
-
-/* Utility classes *//*
-.mb-4,
-.mb-3,
-.mt-5 {
-  margin-bottom: 1.5rem !important;
-}
-
-.mb-3 {
-  margin-bottom: 1rem !important;
-}
-
-.mt-5 {
-  margin-top: 6rem !important;
-  margin-bottom: 2rem;
-}
-
-/* Button size adjustment *//*
-@media (min-width: 768px) {
-  .d-grid {
-    margin-top: 1rem;
-  }
-
-  .d-grid .btn {
-    width: 25%;
-    margin: 0 auto;
-  }
-}
-*/
-
-
 /* General styles */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
@@ -216,42 +105,6 @@ body {
   margin-left: auto;
 }
 
-/* Forum styles *//*
-.forum-container {
-  margin-top: 20px; 
-  background-color: #000000;
-  color: #ffffff;
-}
-
-.forum-title {
-  color: #41099a !important;
-}
-
-.forum-container .navbar {
-  background: linear-gradient(
-    45deg,
-    #ffa07a,
-    #ffd700,
-    #ffdead,
-    #87ceeb,
-    #b0e0e6
-  ); 
-}
-
-.forum-container .navbar-brand {
-  color: #ffd700;
-}
-
-.forum-container .btn-outline-secondary {
-  color: #ffd700;
-  border-color: #ffd700;
-}
-
-.forum-container .btn-outline-secondary:hover {
-  color: #ff8c00;
-  border-color: #ff8c00;
-}
-
 /* Footer styles */
 
 .footer {
@@ -319,17 +172,16 @@ body {
 .carousel-item {
   height: 500px;
   overflow: hidden;
-}
+} 
 
 .carousel-item img {
   object-fit: cover;
   height: 100%;
-} /*
+} 
 .carousel {
   z-index: 1; 
 }
 
-*/
 /* Main styles */
 .main {
   /* padding: 20px 0; */
@@ -573,7 +425,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
+/*
 .carousel-item {
   display: flex;
   flex-wrap: nowrap;
@@ -582,8 +434,9 @@ body {
 }
 
 .carousel-item > div {
-  flex: 1 0 33%; /* Tres tarjetas por fila */
-  max-width: auto; /* Asegura que el ancho máximo sea un tercio del carrusel */
+  flex: 1 0 33%; /* Tres tarjetas por fila *//*
+  max-width: auto; /* Asegura que el ancho máximo sea un tercio del carrusel *//*
   padding: 10px;
   box-sizing: border-box;
 }
+  */
