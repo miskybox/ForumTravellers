@@ -1,32 +1,68 @@
 //UserProfile.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
+import { useAuth } from '../context/UseAuth';
+import "../styles/App.css"; 
+import "../styles/UserProfile.css"; 
 
 const UserProfile = () => {
-    const { username } = useParams(); // Extrae el parámetro username de la URL
+    const { username } = useParams();
+    const { user, updateProfilePicture } = useAuth();
+    const [file, setFile] = useState(null);
 
-    // Simula datos de usuario basados en el parámetro username
     const userData = {
-        name: username,
-        avatar: 'user-avatar.jpg',
+        name: username || user?.displayName,
+        avatar: user?.photoURL || '/user-avatar.jpg',
         role: 'Administrador',
         followers: 0,
         following: 0,
     };
 
+    const handleFileChange = (e) => {
+        setFile(e.target.files[0]);
+    };
+
+    const handleUpload = async () => {
+        if (file) {
+            await updateProfilePicture(file);
+        }
+    };
+
     return (
-        <div className="user-profile">
-            <img src={userData.avatar} alt="User Avatar" />
-            <h2>{userData.name}</h2>
-            <p>#{userData.role}</p>
-            <p>{userData.followers} Followers | {userData.following} Following</p>
-            <div className="user-actions">
-                <button>Follow</button>
-                <button>Message</button>
-            </div>
-        </div>
+        <Container className="user-profile-container mt-5">
+            <Row className="justify-content-md-center">
+                <Col md={6}>
+                    <Card className="text-center">
+                        <Card.Img variant="top" src={userData.avatar} alt="User Avatar" className="user-avatar mt-3" />
+                        <Card.Body>
+                            <Card.Title className="mb-3">{userData.name}</Card.Title>
+                            <Card.Text>
+                                <strong>Role:</strong> {userData.role} <br />
+                                <strong>Followers:</strong> {userData.followers} <br />
+                                <strong>Following:</strong> {userData.following}
+                            </Card.Text>
+                            {user?.displayName === username && (
+                                <div className="mt-3">
+                                    <Form.Group>
+                                        <Form.Label>Upload Profile Picture</Form.Label>
+                                        <Form.Control type="file" onChange={handleFileChange} />
+                                    </Form.Group>
+                                    <Button variant="primary" className="mt-3" onClick={handleUpload}>
+                                        Upload
+                                    </Button>
+                                </div>
+                            )}
+                            <div className="user-actions mt-4">
+                                <Button variant="primary" className="me-2">Follow</Button>
+                                <Button variant="secondary">Message</Button>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 
 export default UserProfile;
-

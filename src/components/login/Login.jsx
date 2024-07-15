@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Alert } from "react-bootstrap";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/UseAuth";
 import firebaseConfig from "../../firebase.config";
 
 const Login = () => {
@@ -27,7 +27,7 @@ const Login = () => {
       login({
         email: user.email,
         username: user.displayName,
-      }); // Actualiza el estado global del usuario
+      });
       navigate("/");
     } catch (error) {
       setError(error.message);

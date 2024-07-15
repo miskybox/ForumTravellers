@@ -180,6 +180,7 @@ body {
 } 
 .carousel {
   z-index: 1; 
+  margin-bottom: 40px;
 }
 
 /* Main styles */
@@ -425,18 +426,15 @@ body {
   display: flex;
   justify-content: center;
 }
-/*
-.carousel-item {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  width: 100%;
+
+/* Specific styles for MyEntries and AllEntries */
+.my-entries,
+.all-entries {
+  margin-top: 5rem;
 }
 
-.carousel-item > div {
-  flex: 1 0 33%; /* Tres tarjetas por fila *//*
-  max-width: auto; /* Asegura que el ancho máximo sea un tercio del carrusel *//*
-  padding: 10px;
-  box-sizing: border-box;
+.my-entries h2,
+.all-entries h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-  */

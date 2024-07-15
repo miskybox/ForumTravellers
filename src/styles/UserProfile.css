@@ -1,0 +1,21 @@
+/*UserProfile.css*/
+.user-profile-container {
+    margin-top: 50px;
+}
+
+.user-avatar {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 0 5px;
+}

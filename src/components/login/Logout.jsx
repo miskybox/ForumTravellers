@@ -1,6 +1,6 @@
 // Logout.jsx
 import React from "react";
-import { useAuth } from "./AuthContext";
+import { useAuth } from "../context/UseAuth";
 
 const Logout = () => {
   const { logout } = useAuth();

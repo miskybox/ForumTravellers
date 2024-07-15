@@ -2,7 +2,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "../styles/App.css";
+import "../styles/Gallery.css";
 
 const Gallery = () => {
   const images = [
@@ -36,32 +36,32 @@ const Gallery = () => {
       title: "Iceland",
       link: "/blog/iceland",
     },
-    // Add more image objects as needed
+    
   ];
 
   return (
-    <Container className="mb-3 gallery-container">
-      <h1 className="h1 text-center mb-4">Blog Gallery</h1>
-      <Row xs={1} md={3} className="g-4">
-        {images.map((image, index) => (
-          <Col key={index} className="mb-4">
-            <Card className="gallery-card">
-              <Link to={image.link}>
-                <Card.Img variant="top" src={image.src} alt={image.title} />
-              </Link>
-              <Card.Body>
-                <Card.Title>
-                  <Link to={image.link} className="card-link">
-                    {image.title}
-                  </Link>
-                </Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+    <Container className="mb-5 gallery-container">
+        <h1 className="text-center mb-4">Blog Gallery</h1>
+        <Row xs={1} md={3} className="g-4">
+            {images.map((image, index) => (
+                <Col key={index} className="mb-4">
+                    <Card className="gallery-card">
+                        <Link to={image.link}>
+                            <Card.Img variant="top" src={image.src} alt={image.title} />
+                        </Link>
+                        <Card.Body>
+                            <Card.Title>
+                                <Link to={image.link} className="card-link">
+                                    {image.title}
+                                </Link>
+                            </Card.Title>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            ))}
+        </Row>
     </Container>
-  );
+);
 };
 
 export default Gallery;

@@ -1,6 +1,12 @@
 /*Blog.css*/
 .blog-post-card {
-    max-width: 800px;
-    margin: 20px auto;
-  }
+  max-width: 1000px; 
+  margin: 20px auto; 
+  background-color:  #102C57;
+}
+
+.blog-post-title,
+.blog-post-subtitle {
+  color: #FFC470 !important; 
+}
   

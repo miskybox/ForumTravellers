@@ -23,7 +23,7 @@ const CarouselBackground = () => {
       <Carousel.Item className="carousel-item">
         <img loading="lazy"
           className="d-block w-100"
-          src="https://i.postimg.cc/W1QyStXD/death-Valley.jpg"
+          src="https://i.postimg.cc/G3jBNpRX/angkor-Wat-amanecer.jpgn"
           alt="Slide 3"
         />
       </Carousel.Item>

@@ -12,7 +12,9 @@ import Gallery from "./components/Gallery";
 import AllEntries from "./pages/AllEntries";
 import MyEntries from "./pages/MyEntries";
 import BlogPost from "./pages/BlogPost";
+import UserProfile from "./pages/UserProfile";
 import { AuthProvider } from "./context/AuthContext";
+import ProtectedRoute from './components/ProtectedRoute'; 
 
 function App() {
   const [categories, setCategories] = useState([
@@ -24,6 +26,7 @@ function App() {
     { id: 6, name: "Oceania", posts: 4, following: false, followers: 0 },
   ]);
 
+ 
   return (
     <AuthProvider>
       <Router>
@@ -49,7 +52,10 @@ function App() {
             <Route path="signup" element={<Signup />} />
             <Route path="gallery" element={<Gallery />} />
             <Route path="all-entries" element={<AllEntries />} />
-            <Route path="my-entries" element={<MyEntries />} />
+            <Route element={<ProtectedRoute />}>
+              <Route path="my-entries" element={<MyEntries />} />
+              <Route path="profile/:username" element={<UserProfile />} /> 
+            </Route>
             <Route path="blog/:postId" element={<BlogPost />} />
           </Route>
         </Routes>

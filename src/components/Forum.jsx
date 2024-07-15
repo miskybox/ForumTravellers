@@ -14,7 +14,7 @@ import {
   Dropdown,
 } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from '../context/UseAuth';
 import "../styles/App.css";
 
 const Forum = ({ categories, setCategories }) => {

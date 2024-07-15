@@ -4,15 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Weather from "./Weather";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/UseAuth";
 import "../styles/App.css";
 import CarouselBackground from "../components/Carousel";
 
 const Header = () => {
   const { user, logout } = useAuth();
-
-  console.log("User:", user); // Depuración
-  console.log("Logout function:", logout); // Depuración
 
   return (
     <div className="relative background-custom" id="/">
@@ -50,14 +47,19 @@ const Header = () => {
                 {!user ? (
                   <>
                     <LinkContainer to="/login">
-                      <NavDropdown.Item>User</NavDropdown.Item>
+                      <NavDropdown.Item>Login</NavDropdown.Item>
                     </LinkContainer>
                     <LinkContainer to="/signup">
                       <NavDropdown.Item>Sign Up</NavDropdown.Item>
                     </LinkContainer>
                   </>
                 ) : (
-                  <NavDropdown.Item onClick={logout}>Log Out</NavDropdown.Item>
+                  <>
+                    <LinkContainer to={`/profile/${user.username}`}>
+                      <NavDropdown.Item>User</NavDropdown.Item>
+                    </LinkContainer>
+                    <NavDropdown.Item onClick={logout}>Log Out</NavDropdown.Item>
+                  </>
                 )}
               </NavDropdown>
             </Nav>

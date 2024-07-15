@@ -7,7 +7,7 @@ import {
   sendEmailVerification,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/UseAuth";
 import firebaseConfig from "../../firebase.config";
 
 const SignUp = () => {
