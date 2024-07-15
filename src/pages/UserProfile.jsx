@@ -6,6 +6,7 @@ import { useAuth } from '../context/UseAuth';
 import "../styles/App.css"; 
 import "../styles/UserProfile.css"; 
 
+
 const UserProfile = () => {
     const { username } = useParams();
     const { user, updateProfilePicture } = useAuth();
@@ -13,7 +14,7 @@ const UserProfile = () => {
 
     const userData = {
         name: username || user?.displayName,
-        avatar: user?.photoURL || '/user-avatar.jpg',
+        avatar: 'https://i.postimg.cc/hjNg63gB/user-avatar.jpg', // URL de la imagen del avatar
         role: 'Administrador',
         followers: 0,
         following: 0,
