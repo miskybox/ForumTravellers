@@ -1,4 +1,4 @@
-//Forum.jsx
+// Forum.jsx
 import React, { useState } from "react";
 import {
   Container,
@@ -15,7 +15,16 @@ import {
 } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from '../context/UseAuth';
-import "../styles/App.css";
+import "../styles/Forum.css";
+
+const descriptions = {
+  "General Category": "Share your experiences, tips, and questions about any destination in the world. A space for all travelers!",
+  "Africa": "Discover the magic of the savannah, the rich culture, and the ancient history of the African continent. Share your adventures in this wild corner of the world!",
+  "America": "From the Arctic tundra to Patagonia, a continent full of contrasts and diversity. Share your travels throughout the Americas!",
+  "Asia": "Immerse yourself in the spirituality, technology, and ancestral traditions of Asia. Share your experiences in this fascinating continent!",
+  "Europe": "Explore the history, culture, and beauty of European cities and landscapes. Share your travels through the old continent!",
+  "Oceania": "Discover the unspoiled nature, paradisiacal beaches, and unique culture of Australia, New Zealand, and the Pacific Islands. Share your adventures in this remote corner of the world!"
+};
 
 const Forum = ({ categories, setCategories }) => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -136,7 +145,7 @@ const Forum = ({ categories, setCategories }) => {
             )
             .map((category) => (
               <Col key={category.id} md={4} className="no-margin-padding">
-                <Card className="mb-3 card">
+                <Card className="mb-3 card card-custom">
                   <Card.Header className="card-header">
                     <span style={{ fontWeight: "bold" }}>{category.name}</span>
                     <span style={{ display: "flex", alignItems: "center" }}>
@@ -158,18 +167,19 @@ const Forum = ({ categories, setCategories }) => {
                   </Card.Header>
                   <Card.Body className="card-body">
                     <Card.Text>
-                      Describe your forum category. Engage your audience and
-                      entice them to continue reading.
+                      {descriptions[category.name] || "Describe your forum category. Engage your audience and entice them to continue reading."}
                     </Card.Text>
-                    <Link to={`/forum/${category.id}`}>
-                      <Button className="mt-5 btn-sm">View Posts</Button>
-                    </Link>
-                    <Button
-                      className="mt-3 btn-sm"
-                      onClick={() => handleCommentClick(category)}
-                    >
-                      Write a Comment
-                    </Button>
+                    <div className="d-flex justify-content-between">
+                      <Link to={`/forum/${category.id}`} className="flex-fill me-2">
+                        <Button className="btn-sm w-100">View Posts</Button>
+                      </Link>
+                      <Button
+                        className="btn-sm flex-fill ms-2"
+                        onClick={() => handleCommentClick(category)}
+                      >
+                        Write a Comment
+                      </Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </Col>
@@ -181,3 +191,4 @@ const Forum = ({ categories, setCategories }) => {
 };
 
 export default Forum;
+
